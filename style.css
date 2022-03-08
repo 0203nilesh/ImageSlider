@@ -1,0 +1,68 @@
+body{
+    background: linear-gradient(to right , cyan, lightblue);
+}
+.container{
+    /* border: 2px solid violet; */
+    position: relative;
+}
+.container .wrapper{
+    width: 70vw;
+    height: 75vh;
+    /* border: 1px solid black; */
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.container .slider-holder{
+    /* border: 2px solid green; */
+    display: grid;
+    height: 100%;
+    animation: slide 15s ease infinite;
+    grid-template-columns: repeat(3,100%);
+}
+
+#slider-iamge-1{
+    /* background-color: lawngreen; */
+    background: url(images/image-1.jpeg) no-repeat center center/cover;
+}
+#slider-iamge-2{
+    /* background-color:  olivedrab; */
+    /* display: none; */
+    background: url(images/iamge-2.jpeg) no-repeat center center/cover;
+    
+}
+#slider-iamge-3{
+    /* background-color: green; */
+    /* display: none; */
+    background: url(images/iamge-3.jpeg) no-repeat center center/cover;
+
+}
+
+.button-holder{
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+}
+
+.container .button-holder .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 3rem;
+    margin: 0.3rem 0.4rem;
+    background-color: lightcyan;
+}
+
+@keyframes slide {
+    0%{transform: translate(0%);}
+    10%{transform: translate(-100%);}
+    20%{transform: translate(-100%);}
+    30%{transform: translate(-100%);}
+    40%{transform: translate(-200%);}
+    50%{transform: translate(-200%);}
+    60%{transform: translate(-200%);}
+    70%{transform: translate(0%);}
+    80%{transform: translate(0%);}
+    90%{transform: translate(0%);}
+    100%{transform: translate(0%);}
+}
